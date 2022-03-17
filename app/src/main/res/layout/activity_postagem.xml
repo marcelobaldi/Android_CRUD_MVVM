@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.PostagemActivity">
+
+    <data>
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/cli_txt_titulo_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título ..."
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/cli_edt_id_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:enabled="false"
+        android:hint="Id ..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <EditText
+        android:id="@+id/cli_edt_nome_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:enabled="true"
+        android:hint="Nome ..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <EditText
+        android:id="@+id/cli_edt_idade_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:enabled="true"
+        android:hint="Idade ..."
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <View
+        android:layout_width="200sp"
+        android:layout_height="1sp"
+        android:layout_marginTop="120sp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <ImageView
+        android:id="@+id/cli_img_imagem1_xml"
+        android:layout_width="148dp"
+        android:layout_height="209dp"
+        android:src="@drawable/homer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825" />
+
+    <Button
+        android:id="@+id/cli_btn_salvar_xml"
+        android:layout_width="107dp"
+        android:layout_height="48dp"
+        android:onClick="cli_btn_salvar_xml"
+        android:text="Salvar"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <Button
+        android:id="@+id/cli_btn_deletar_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="cli_btn_deletar_xml"
+        android:text="Deletar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>
